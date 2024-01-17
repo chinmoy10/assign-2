@@ -1,9 +1,11 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Mulish', sans-serif;
+    max-width: 1170px;
 }
 
+/* header section */
 .header_banner {
     min-height: 500px;
     max-width: 1170px;
@@ -59,6 +61,20 @@
     border: none;
     margin-left: 1rem;
 }
+/* popular tour section */
+
+.popular_section{
+    display: flex;
+    gap: 55px;
+}
+
+.popular_tour_section{
+    width: 100%;
+}
+
+
+
+/* responsive quary */
 
 @media screen and (max-width: 600px) {
     .header_banner {
