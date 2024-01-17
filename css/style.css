@@ -98,7 +98,48 @@
     border: none;
     margin-top: 18px;
 }
+/* favourite places */
+.favourite_tour_places{
+    margin-bottom: 100px;
+}
 
+.favourite_places_title{
+    font-size: 2.8rem;
+    text-align: center;
+    color: #131318;
+}
+
+.favourite_places_description{
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(19, 19, 24, 0.70);
+    margin: 24px 0px 48px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.all_places img{
+    width: 100%;
+    height: auto;
+}
+
+.all_places{
+    position: relative;
+}
+
+.all_places h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    color: #ffffff;
+}
 
 
 
@@ -129,7 +170,6 @@
         flex-direction: column;
         width: 80%;
     }
-    
 
     .banner_search_places input {
         margin: 0 auto;
@@ -150,6 +190,15 @@
 
     .popular_tour_section_image img{
         width: 100%;
+    }
+
+    .favourite_places_title{
+        font-size: 1rem;
+    }
+
+    .row{
+        flex-direction: column;
+        height: auto;
     }
 
 }
@@ -199,5 +248,17 @@
         width: 100%;
     }
 
+    .favourite_places_title{
+        font-size: 1.5rem;
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        height: auto;
+    }
+    .row img{
+        width: 100%;
+    }
 
 }
