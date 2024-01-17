@@ -63,32 +63,37 @@
 }
 /* popular tour section */
 
-.popular_section{
+.popular_section,
+.perfect_place{
     display: flex;
     gap: 60px;
     margin: 100px 0px;
 }
 
-.popular_tour_section{
+.popular_tour_section,
+.simple_perfect_place_section{
     width: 100%;
 }
 
-.popular_tour_section ul{
+.popular_tour_section ul,
+.simple_perfect_place_section ul{
     margin-left: 25px;
 }
 
-.popular_tour_section_title{
+.popular_tour_section_title,
+.perfect_place_section_title{
     font-size: 40px;
     margin-bottom: 24px;
 }
 
-.popular_tour_section_description, li{
+.popular_tour_section_description, li, .perfect_place_section_description{
     font-size: 1rem;
     color: rgba(19, 19, 24, 0.70);
     margin-bottom: 20px;
 }
 
-.popular_section_btn{
+.popular_section_btn,
+.perfect_place_section_btn{
     color: #ffffff;
     background-color: #FF5400;
     cursor: pointer;
@@ -96,7 +101,7 @@
     font-size: 1rem;
     border-radius: 8px;
     border: none;
-    margin-top: 18px;
+    margin-top: 28px;
 }
 /* favourite places */
 .favourite_tour_places{
@@ -128,17 +133,20 @@
     height: auto;
 }
 
-.all_places{
+.all_places,
+.popular_tour_section_image{
     position: relative;
 }
 
-.all_places h4{
+.all_places h4,
+.popular_tour_section_image h6{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #ffffff;
+    text-align: center;
 }
 
 
@@ -182,14 +190,24 @@
         margin-left: 0px;
     }
 
-    .popular_section{
+    .popular_section,
+    .perfect_place{
         flex-direction: column;
         margin: 40px auto;
         gap: 40px;
     }
 
+    .popular_tour_section_image img,
     .popular_tour_section_image img{
         width: 100%;
+    }
+
+    .popular_tour_section_image h6{
+        font-size: 0.8rem;
+    }
+
+    .perfect_place_section_btn{
+        margin-top: 20px;
     }
 
     .favourite_places_title{
@@ -238,12 +256,14 @@
         width: 100%;
     }
 
-    .popular_section{
+    .popular_section,
+    .perfect_place{
         flex-direction: column;
         margin: 40px auto;
         gap: 40px;
     }
 
+    .popular_tour_section_image img,
     .popular_tour_section_image img{
         width: 100%;
     }
